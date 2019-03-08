@@ -1,0 +1,46 @@
+record(ao,"$(P)$(R):Pres1") {
+    field(PINI, "NO")
+    field(DTYP, "asynFloat64")
+    field(OUT,  "@asyn($(PORT),$(ADDR))EF_SET_PRESSURE")
+    field(DRVL, "$(DRVL)")
+    field(DRVH, "$(DRVH)")
+    field(PREC, "$(PREC)")
+    field(VAL,  "0")
+    field(EGU,  "mbar")
+}
+
+record(ao,"$(P)$(R):P1TweakVal") {
+    field(PREC, "$(PREC)")
+}
+
+record(calcout,"$(P)$(R):P1TweakUp") {
+    field(CALC, "A+B")
+    field(INPA, "$(P)$(R):Pres1.VAL  NPP MS")
+    field(INPB, "$(P)$(R)TweakVal.VAL  NPP MS")
+    field(OUT,  "$(P)$(R):Pres1.VAL  PP MS")
+    field(PREC, "$(PREC)")
+}
+
+record(calcout,"$(P)$(R):P1TweakDown") {
+    field(CALC, "A-B")
+    field(INPA, "$(P)$(R):Pres1VAL  NPP MS")
+    field(INPB, "$(P)$(R)TweakVal.VAL  NPP MS")
+    field(OUT,  "$(P)$(R):Pres1.VAL  PP MS")
+    field(PREC, "$(PREC)")
+}
+
+record(ai,"$(P)$(R):Pres1_RBV")
+{
+    field(SCAN, "1 second")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR))EF_GET_PRESSURE")
+    field(PREC, "$(PREC)")
+}
+
+record(ai,"$(P)$(R):Sensor1_RBV")
+{
+    field(SCAN, "1 second")
+    field(DTYP, "asynFloat64")
+    field(INP,  "@asyn($(PORT),$(ADDR))EF_GET_FLOW")
+    field(PREC, "$(PREC)")
+}
