@@ -28,7 +28,7 @@ SUPPORT=C:/epics
 ASYN=$(SUPPORT)/asyn 
 CALC=$(SUPPORT)/calc 
 #STD =$(SUPPORT)/std
-#SSCAN =$(SUPPORT)/sscan
+SSCAN =$(SUPPORT)/sscan
 ELVEFLOW=$(SUPPORT)/elveFlow
 
 # If using the sequencer, point SNCSEQ at its top directory:

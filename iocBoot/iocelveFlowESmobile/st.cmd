@@ -19,6 +19,8 @@ dbLoadTemplate("db/elveFlow.substitutions")
 # The name to give to this asyn port driver  
 USBelveFlowConfig("elveFlowOB1", 1)
 
+#asynSetTraceMask elveFlowOB1 -1 255
+
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
 

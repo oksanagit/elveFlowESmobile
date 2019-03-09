@@ -7,7 +7,9 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install) into <top>/db
 # databases, templates, substitutions like this
 #DB += xxx.db
-DB += elveFlow.template
+# template is taken from the driver location; update elveFlow.substitutions 
+# to look in the folder where you installed elveFlow driver
+#DB += elveFlow.template
 DB += elveFlow.substitutions
 #DB += asyn.db
 

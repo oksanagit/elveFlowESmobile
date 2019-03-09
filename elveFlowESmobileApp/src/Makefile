@@ -14,9 +14,10 @@ DBD += elveFlowESmobile.dbd
 
 # elveFlowESmobile.dbd will be made up from these files:
 ## save/restore elveFlowESmobile_DBD += asSupport.dbd
-##elveFlowESmobile_DBD += sscanSupport.dbd
 elveFlowESmobile_DBD += base.dbd
 elveFlowESmobile_DBD += asyn.dbd
+elveFlowESmobile_DBD += sscanSupport.dbd
+elveFlowESmobile_DBD += calc.dbd
 #elveFlowESmobile_DBD += stdSupport.dbd
 elveFlowESmobile_DBD += elveFlowSupport.dbd
 
@@ -28,8 +29,9 @@ elveFlowESmobile_DBD += elveFlowSupport.dbd
 elveFlowESmobile_LIBS += Elveflow64
 elveFlowESmobile_LIBS += Elveflow
 elveFlowESmobile_LIBS += asyn
+elveFlowESmobile_LIBS += calc
 #elveFlowESmobile_LIBS += std
-#elveFlowESmobile_LIBS += sscan
+elveFlowESmobile_LIBS += sscan
 
 # elveFlowESmobile_registerRecordDeviceDriver.cpp derives from elveFlowESmobile.dbd
 elveFlowESmobile_SRCS += elveFlowESmobile_registerRecordDeviceDriver.cpp
