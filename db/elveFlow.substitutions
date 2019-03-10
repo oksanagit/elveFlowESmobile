@@ -2,15 +2,15 @@
 file "$(ASYN)/db/asynRecord.db"
 {
 pattern
-{ P, R, PORT, ADDR, IMAX, OMAX}
-{ xf11id-elveFlowOB1:, asyn, elveFlowOB1, 0, 80, 80}
+{ P,	 		    R, 	  PORT,        ADDR, IMAX, OMAX}
+{"XF11ID-ES\{elveFlowOB1\}:", asyn, elveFlowOB1, 0,    80,   80}
 }
 # Analog outputs, analog inputs 
 file "$(ELVEFLOW)/db/elveFlow.template"
 {
 pattern
 { P,         R,      		    PORT,        ADDR, DRVL,   DRVH, PREC}
-{ XF11ID-ES, "\{elveFlowOB1\}", elveFlowOB1, 0,    0.,     200., 2}
+{ XF11ID-ES, "\{elveFlowOB1\}", elveFlowOB1, 0,    0.,     500., 2}
 }
 
 

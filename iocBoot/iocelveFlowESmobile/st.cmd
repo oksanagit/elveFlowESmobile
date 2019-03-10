@@ -14,6 +14,7 @@ elveFlowESmobile_registerRecordDeviceDriver pdbbase
 ## Load record instances
 #dbLoadRecords("db/xxx.db","user=flowuser")
 dbLoadTemplate("db/elveFlow.substitutions")
+dbLoadTemplate("db/pid_slow.substitutions")
  
 ## Configure port driver # USBelveFlowConfig(portName)        
 # The name to give to this asyn port driver  

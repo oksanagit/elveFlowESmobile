@@ -27,7 +27,8 @@ SUPPORT=C:/epics
 #MYMODULE = $(MODULES)/my-module
 ASYN=$(SUPPORT)/asyn 
 CALC=$(SUPPORT)/calc 
-#STD =$(SUPPORT)/std
+SNCSEQ=$(SUPPORT)/seq-2.2.5
+STD =$(SUPPORT)/std
 SSCAN =$(SUPPORT)/sscan
 ELVEFLOW=$(SUPPORT)/elveFlow
 

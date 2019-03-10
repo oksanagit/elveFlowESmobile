@@ -11,6 +11,7 @@ include $(TOP)/configure/CONFIG
 # to look in the folder where you installed elveFlow driver
 #DB += elveFlow.template
 DB += elveFlow.substitutions
+DB += pid_slow.substitutions
 #DB += asyn.db
 
 #----------------------------------------------------
