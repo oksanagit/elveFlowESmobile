@@ -30,6 +30,7 @@ CALC=$(SUPPORT)/calc
 SNCSEQ=$(SUPPORT)/seq-2.2.5
 STD =$(SUPPORT)/std
 SSCAN =$(SUPPORT)/sscan
+AUTOSAVE =$(SUPPORT)/autosave
 ELVEFLOW=$(SUPPORT)/elveFlow
 
 # If using the sequencer, point SNCSEQ at its top directory:

@@ -25,5 +25,9 @@ USBelveFlowConfig("elveFlowOB1", 1)
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
 
+# save things every thirty seconds
+epicsEnvSet ("PREFIX", "XF11ID-ES\{elveFlowOB1\}:")
+create_monitor_set("auto_settings.req", 30,"P=$(PREFIX)")
+
 ## Start any sequence programs
 #seq sncxxx,"user=flowuser"

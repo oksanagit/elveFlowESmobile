@@ -21,6 +21,7 @@ elveFlowESmobile_DBD += transformRecord.dbd
 elveFlowESmobile_DBD += epidRecord.dbd
 elveFlowESmobile_DBD += sscanSupport.dbd
 elveFlowESmobile_DBD += calc.dbd
+elveFlowESmobile_DBD += asSupport.dbd
 elveFlowESmobile_DBD += elveFlowSupport.dbd
 
 
@@ -36,6 +37,7 @@ elveFlowESmobile_LIBS += seq
 elveFlowESmobile_LIBS += std
 elveFlowESmobile_LIBS += pv
 elveFlowESmobile_LIBS += sscan
+elveFlowESmobile_LIBS += autosave
 
 # elveFlowESmobile_registerRecordDeviceDriver.cpp derives from elveFlowESmobile.dbd
 elveFlowESmobile_SRCS += elveFlowESmobile_registerRecordDeviceDriver.cpp
