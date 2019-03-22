@@ -9,8 +9,8 @@ pattern
 file "$(ELVEFLOW)/db/elveFlow.template"
 {
 pattern
-{ P,         R,      		    PORT,        ADDR, DRVL,   DRVH, PREC}
-{ XF11ID-ES, "\{elveFlowOB1\}", elveFlowOB1, 0,    0.,     500., 2}
+{ P,                           R,          PORT,        ADDR, DRVL,   DRVH, PREC}
+{ "XF11ID-ES\{elveFlowOB1\}:", "elveFlow:", elveFlowOB1, 0,    0.,     500., 2}
 }
 
 
