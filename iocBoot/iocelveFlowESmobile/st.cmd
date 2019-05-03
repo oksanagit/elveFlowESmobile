@@ -14,13 +14,14 @@ elveFlowESmobile_registerRecordDeviceDriver pdbbase
 ## Load record instances
 #dbLoadRecords("db/xxx.db","user=flowuser")
 dbLoadTemplate("db/elveFlow.substitutions")
-dbLoadTemplate("db/pid_slow.substitutions")
+dbLoadTemplate("db/asyn.substitutions")
  
 ## Configure port driver # USBelveFlowConfig(portName)        
 # The name to give to this asyn port driver  
 USBelveFlowConfig("elveFlowOB1", 1)
 
-#asynSetTraceMask elveFlowOB1 -1 255
+#asynSetTraceIOMask("elveFlowOB1", 1,0x2)
+#asynSetTraceMask ("elveFlowOB1", -1, 9)
 
 set_requestfile_path("./")
 set_requestfile_path($(STD), "stdApp/Db")

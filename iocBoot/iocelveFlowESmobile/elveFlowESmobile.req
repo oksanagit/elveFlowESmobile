@@ -1,2 +1,8 @@
-file "elveFlow_settings.req", P=XF11ID-ES\{elveFlowOB1\}:, R=elveFlow:
-file "epid.req",               P=elveFlowOB1:PID1
+file "elveFlow_settings.req", P=XF11ID-ES\{elveFlowOB1\}:, R=Ch1:
+file "elveFlow_settings.req", P=XF11ID-ES\{elveFlowOB1\}:, R=Ch2:
+file "elveFlow_settings.req", P=XF11ID-ES\{elveFlowOB1\}:, R=Ch3:
+file "elveFlow_settings.req", P=XF11ID-ES\{elveFlowOB1\}:, R=Ch4:
+file "epid.req",              P=XF11ID-ES\{elveFlowOB1\}:Ch1:PID1
+file "epid.req",              P=XF11ID-ES\{elveFlowOB1\}:Ch2:PID1
+file "epid.req",              P=XF11ID-ES\{elveFlowOB1\}:Ch3:PID1
+file "epid.req",              P=XF11ID-ES\{elveFlowOB1\}:Ch4:PID1

@@ -1,0 +1,40 @@
+record(seq, "$(P)$(R)Sensor5Seq")
+{
+    field(DOL1, "14000")
+    field(LNK1, "$(P)$(R)Pres.DRVH NPP")
+    field(DOL2, "1000")
+    field(LNK2, "$(R)PID1.HOPR NPP")
+    field(DOL3, "14000")
+    field(LNK3, "$(P)$(R)PID1_limits.B NPP")
+}
+
+record(calcout, "$(P)$(R)Sensor5Calc")
+{
+    field(INPA, "$(P)$(R)OB1sensorType CP")
+    field(CALC, "A=5")
+    field(OOPT, "Transition To Non-zero")
+    field(DOPT, "Use OCAL")
+    field(OCAL, "1")
+    field(OUT,  "$(P)$(R)Sensor5Seq.PROC")
+}
+
+record(seq, "$(P)$(R)Sensor2Seq")
+{
+    field(DOL1, "180000")
+    field(LNK1, "$(P)$(R)Pres.DRVH NPP")
+    field(DOL2, "7")
+    field(LNK2, "$(R)PID1.HOPR NPP")
+    field(DOL3, "180000")
+    field(LNK3, "$(P)$(R)PID1_limits.B NPP")
+}
+
+record(calcout, "$(P)$(R)Sensor2Calc")
+{
+    field(INPA, "$(P)$(R)OB1sensorType CP")
+    field(CALC, "A=2")
+    field(OOPT, "Transition To Non-zero")
+    field(DOPT, "Use OCAL")
+    field(OCAL, "1")
+    field(OUT,  "$(P)$(R)Sensor2Seq.PROC")
+}
+

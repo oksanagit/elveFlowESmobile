@@ -1,0 +1,7 @@
+# asyn record
+file "$(ASYN)/db/asynRecord.db"
+{
+pattern
+{ P,	 		    R, 	  PORT,        ADDR, IMAX, OMAX}
+{"XF11ID-ES\{elveFlowOB1\}:", asyn, elveFlowOB1, 0,    80,   80}
+}
